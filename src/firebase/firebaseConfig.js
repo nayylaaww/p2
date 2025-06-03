@@ -3,14 +3,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { doc, getFirestore, updateDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  apiKey: "AIzaSyATZ_Oj-0WBImrDoI4w2y_ok-J0VF5DUKE",
+  authDomain: "algorithmics-universe.firebaseapp.com",
+  projectId: "algorithmics-universe",
+  storageBucket: "algorithmics-universe.appspot.com",
+  messagingSenderId: "982328538573",
+  appId: "1:982328538573:web:d9c4f892a82540d1ef0084"
 };
-
 
 
 const app = initializeApp(firebaseConfig);
