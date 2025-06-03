@@ -1,0 +1,98 @@
+.game-info-container {
+    background-image: url('/bg-gameinfo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 108.5vh;
+    margin-bottom: -5rem;
+    width: 100vw;
+    padding: 5rem 2rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .close-btn-home {
+    position: absolute;
+    top: -2rem;
+    right: 0rem;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .close-btn-home :hover {
+background-color: blue;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .logo {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  height: 120px;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+}
+
+.tab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 300px;
+  height: 100px;
+  margin-top: 20px;
+  align-items: flex-start;
+  position: absolute;
+  top: 180px;
+  left: 450px;
+}
+
+
+.tab-button {
+  padding: 12px 20px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.726);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.tab-button.active,
+.tab-button:hover {
+   background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(106, 13, 173, 0.6), rgba(0, 15, 27, 0.6));
+  color: white;
+}
+
+
+.tab-content {
+  margin-top: 50px;
+  height: 650px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.726);
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: 850px;
+  margin-right: auto;
+  text-align: center;
+}

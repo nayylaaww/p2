@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+.achie-page-container {
+    background-image: url('/bg-achievment.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 93vh;
+    margin-bottom: -5rem;
+    width: 97.1vw;
+    padding: 5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  height: 120px;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+}
+
+.close-btn-home {
+    position: absolute;
+    top: -2rem;
+    right: 0rem;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+.close-btn-home :hover {
+background-color: blue;
+  }
+
+.achie-title {
+  font-family: "Forum", serif;
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 !important;
+}
+
+.achie-level {
+  font-family: "Forum", serif;
+  color: white;
+  background: linear-gradient(90deg,rgba(0, 0, 0, 0.7) 0%, rgba(51, 38, 98, 0.7), rgba(30, 7, 144, 0.7)) !important;
+  padding-inline: 24px;
+  padding-block: 0px;
+  border-radius: 9999px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 !important;
+}
+
+.achie-item {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  height: fit-content;
+  margin: 0 !important;
+  padding-inline: 24px;
+  width: 100%;
+  position: relative;
+}
+
+.achie-locked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: rgba(68, 73, 85, 0.8);
+  border-radius: 12px;
+}
+
+.achie-side {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 16px;
+  margin: 0 !important;
+}
+
+.achie-side img {
+  height: 50px !important;
+}
+
+.achie-container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.achie-lock {
+  height: 50px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .achie-page-container {
+    background-image: url('/bg-achievment.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 93vh;
+    margin-bottom: -5rem;
+    width: 95vw;
+    padding: 5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .achie-container {
+    width: 100%;
+  }
+
+  .achie-level {
+    font-size: 20px;
+  }
+
+  .achie-title {
+    font-size: 30px;
+  }
+
+  .achie-side img {
+    height: 30px !important;
+  }
+
+  .achie-side {
+    gap: 8px;
+  }
+
+  .achie-item {
+    padding-inline: 12px;
+  }
+
+  .achie-lock {
+    height: 30px !important;
+  }
+
+  .close-btn-home {
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .achie-container {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .achie-page-container {
+    padding: 3rem 1rem;
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .achie-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .achie-level {
+    font-size: 18px;
+    padding-inline: 16px;
+  }
+
+  .achie-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .achie-side {
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .achie-side img {
+    height: 24px !important;
+  }
+
+  .achie-lock {
+    height: 24px !important;
+  }
+
+  .close-btn-home {
+    font-size: 1.8rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .logo {
+    display: none;
+  }
+}

@@ -1,0 +1,163 @@
+.landing-container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.play-button-wrapper {
+  position: absolute;
+  bottom: 6rem;
+  left: 6rem;
+}
+
+.tutorial-button-wrapper {
+  position: absolute;
+  bottom: 5.9rem;
+  left: 28rem;
+}
+
+.play-btn,
+.tutorial-btn {
+  display: inline-block;
+  background: rgba(48, 48, 48, 0.8);
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 55px;
+  top: 4rem;
+  border-radius: 5rem;
+  width: 220px;
+  height: 60px;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hamburger {
+  position: absolute;
+  top: 3rem;
+  left: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-left: 2rem;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.contact-popup-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: slideUp 0.5s ease-out;
+  z-index: 1000;
+}
+
+.contact-popup {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-image {
+  width: 200%;
+  max-width: 1500px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn-contact {
+  position: absolute;
+  top: -94px;
+  right: -65px;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    gap: 1rem;
+  }
+  .play-button-wrapper,
+  .tutorial-button-wrapper {
+  margin: 0;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  }
+
+  .play-btn,
+  .tutorial-btn {
+    bottom: auto;
+    flex: 0 0 auto;
+  }
+}
+
